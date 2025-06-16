@@ -1,0 +1,96 @@
+Log file created at: 2025/06/10 21:07:34
+Running on machine: asus-System-Product-Name
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20250610 21:07:34.768052 27217 test_main.cpp:13] Start Test...
+I20250610 21:07:34.768317 27217 test_math.cpp:12] TEST Armadillo
+I20250610 21:07:34.768327 27217 test_math.cpp:16] Armadillo 载入成功
+I20250610 21:07:34.768342 27217 test_alloc.cpp:24] [CPU] Testing normal allocation and release
+I20250610 21:07:34.768352 27217 test_alloc.cpp:30] [CPU] Allocated 1024 bytes at: 0x57221ece7560
+I20250610 21:07:34.768358 27217 test_alloc.cpp:51] [CPU] Memory content verification succeeded.
+I20250610 21:07:34.768364 27217 test_alloc.cpp:59] [CPU] Released memory at: 0x57221ece7560
+I20250610 21:07:34.768374 27217 test_alloc.cpp:71] [CPU] Testing zero-size allocation
+I20250610 21:07:34.768379 27217 test_alloc.cpp:76] [CPU] Zero-size allocation returns: 0
+I20250610 21:07:34.768384 27217 test_alloc.cpp:80] [CPU] Zero-size allocation correctly returned null.
+I20250610 21:07:34.768393 27217 test_alloc.cpp:96] [CPU] Testing alignment for small and large allocations
+I20250610 21:07:34.768402 27217 test_alloc.cpp:106] [CPU] Small allocation (512) at: 0x57221ece61a0
+I20250610 21:07:34.768407 27217 test_alloc.cpp:107] [CPU] Large allocation (2048) at: 0x57221ece9e60
+I20250610 21:07:34.768412 27217 test_alloc.cpp:121] [CPU] Small allocation aligned to 16 bytes.
+I20250610 21:07:34.768417 27217 test_alloc.cpp:127] [CPU] Large allocation aligned to 32 bytes.
+I20250610 21:07:34.768427 27217 test_alloc.cpp:150] 开始测试 CPU 内存分配与释放
+I20250610 21:07:34.768433 27217 test_alloc.cpp:162] 内存分配成功，地址: 0x57221ece7560
+I20250610 21:07:34.768440 27217 test_alloc.cpp:166] 内存释放成功
+I20250610 21:07:34.768448 27217 test_alloc.cpp:345] 开始测试 CPU 到 CPU 的内存复制
+I20250610 21:07:34.768463 27217 test_alloc.cpp:371] CPU 到 CPU 内存复制测试通过
+I20250610 21:07:34.768473 27217 test_alloc.cpp:386] 开始测试内存清零功能
+I20250610 21:07:34.768482 27217 test_alloc.cpp:408] 内存清零测试通过
+I20250610 21:07:34.768496 27217 test_alloc.cpp:184] [CUDA] Testing normal allocation and release with data verification
+I20250610 21:07:34.850237 27217 test_alloc.cpp:190] [CUDA] Allocated 1048576 bytes at: 0x7d2992c00000
+I20250610 21:07:34.852772 27217 test_alloc.cpp:223] [CUDA] Verified device memory contents successfully.
+I20250610 21:07:34.852819 27217 test_alloc.cpp:230] [CUDA] Released memory at: 0x7d2992c00000
+I20250610 21:07:34.852845 27217 test_alloc.cpp:241] [CUDA] Testing zero-size allocation
+I20250610 21:07:34.852859 27217 test_alloc.cpp:246] [CUDA] Zero-size allocation returns: 0
+I20250610 21:07:34.852864 27217 test_alloc.cpp:250] [CUDA] Zero-size allocation correctly returned null.
+I20250610 21:07:34.852875 27217 test_alloc.cpp:265] [CUDA] Testing memory reuse after release
+I20250610 21:07:34.852890 27217 test_alloc.cpp:272] [CUDA] First allocation at: 0x7d2992d00000
+I20250610 21:07:34.852901 27217 test_alloc.cpp:282] [CUDA] Second allocation at: 0x7d2992d00000
+I20250610 21:07:34.852907 27217 test_alloc.cpp:288] [CUDA] Memory was successfully reused.
+I20250610 21:07:34.852919 27217 test_alloc.cpp:304] [CUDA] Testing large allocation (no pool reuse)
+I20250610 21:07:34.853013 27217 test_alloc.cpp:311] [CUDA] First large allocation at: 0x7d2992e00000
+I20250610 21:07:34.853080 27217 test_alloc.cpp:321] [CUDA] Second large allocation at: 0x7d2993400000
+I20250610 21:07:34.853091 27217 test_alloc.cpp:327] [CUDA] Large allocation did not reuse previous memory block as expected.
+I20250610 21:07:34.853103 27217 test_alloc.cpp:426] 开始测试 CUDA 内存分配与释放
+I20250610 21:07:34.853170 27217 test_alloc.cpp:437] CUDA 内存分配成功，地址: 0x7d2993a00000
+I20250610 21:07:34.853183 27217 test_alloc.cpp:440] CUDA 内存释放成功
+I20250610 21:07:34.853194 27217 test_alloc.cpp:453] 开始测试 CUDA 到 CPU 内存拷贝
+I20250610 21:07:34.853221 27217 test_alloc.cpp:484] CUDA 到 CPU 内存拷贝测试通过
+I20250610 21:07:34.853230 27217 test_alloc.cpp:490] CUDA 到 CPU 内存拷贝资源释放完成
+I20250610 21:07:34.853241 27217 test_alloc.cpp:503] 开始测试 CPU 到 GPU 内存拷贝
+I20250610 21:07:34.853271 27217 test_alloc.cpp:541] CPU 到 GPU 内存拷贝测试通过
+I20250610 21:07:34.853300 27217 test_alloc.cpp:547] CPU 到 GPU 内存拷贝资源释放完成
+I20250610 21:07:34.853313 27217 test_alloc.cpp:560] 开始测试 GPU 到 GPU 内存拷贝
+I20250610 21:07:34.853348 27217 test_alloc.cpp:606] GPU 到 GPU 内存拷贝测试通过
+I20250610 21:07:34.853358 27217 test_alloc.cpp:613] GPU 到 GPU 内存拷贝资源释放完成
+I20250610 21:07:34.853375 27217 test_base.cpp:13] Testing base::error::Success
+I20250610 21:07:34.853386 27217 test_base.cpp:16] Status created: 操作成功
+I20250610 21:07:34.853394 27217 test_base.cpp:29] SuccessCheck test passed.
+I20250610 21:07:34.853403 27217 test_base.cpp:33] Testing base::error::InvalidArgument
+I20250610 21:07:34.853410 27217 test_base.cpp:36] Status created: 参数错误
+I20250610 21:07:34.853415 27217 test_base.cpp:44] InvalidArgumentError test passed.
+I20250610 21:07:34.853423 27217 test_base.cpp:48] Testing base::error::InternalError
+I20250610 21:07:34.853430 27217 test_base.cpp:51] Status created: 内部错误
+I20250610 21:07:34.853435 27217 test_base.cpp:57] InternalError test passed.
+I20250610 21:07:34.853443 27217 test_base.cpp:61] Testing base::error::PathNotValid
+I20250610 21:07:34.853449 27217 test_base.cpp:64] Status created: 路径无效
+I20250610 21:07:34.853454 27217 test_base.cpp:70] PathNotValid test passed.
+I20250610 21:07:34.853463 27217 test_base.cpp:74] Testing base::error::ModelParseError
+I20250610 21:07:34.853469 27217 test_base.cpp:77] Status created: 模型解析失败
+I20250610 21:07:34.853474 27217 test_base.cpp:83] ModelParseError test passed.
+I20250610 21:07:34.853487 27217 test_base.cpp:87] Testing base::error::FunctionNotImplement
+I20250610 21:07:34.853492 27217 test_base.cpp:90] Status created: 功能未实现
+I20250610 21:07:34.853498 27217 test_base.cpp:96] FunctionNotImplement test passed.
+I20250610 21:07:34.853507 27217 test_base.cpp:100] Testing base::error::KeyHasExits
+I20250610 21:07:34.853513 27217 test_base.cpp:103] Status created: 键已存在
+I20250610 21:07:34.853523 27217 test_base.cpp:109] KeyHasExits test passed.
+I20250610 21:07:34.853533 27217 test_base.cpp:113] Testing assignment operator
+I20250610 21:07:34.853540 27217 test_base.cpp:116] Assigned error code: 7
+I20250610 21:07:34.853545 27217 test_base.cpp:121] AssignmentOperator test passed.
+I20250610 21:07:34.853559 27217 test_buffer.cpp:13] 开始执行 BufferTest.DefaultConstructor
+I20250610 21:07:34.853565 27217 test_buffer.cpp:22] BufferTest.DefaultConstructor: 测试通过
+I20250610 21:07:34.853582 27217 test_buffer.cpp:37] BufferTest.ConstructWithSizeAndAllocator: 测试通过
+I20250610 21:07:34.853593 27217 test_buffer.cpp:41] 开始执行 BufferTest.Allocate
+I20250610 21:07:34.853600 27217 test_buffer.cpp:50] BufferTest.Allocate: 测试通过
+I20250610 21:07:34.853610 27217 test_buffer.cpp:54] 开始执行 BufferTest.ExternalMemory
+I20250610 21:07:34.853615 27217 test_buffer.cpp:65] BufferTest.ExternalMemory: 测试通过
+I20250610 21:07:34.853624 27217 test_buffer.cpp:70] 开始执行 BufferTest.CopyFrom_CPU_To_CPU
+I20250610 21:07:34.853634 27217 test_buffer.cpp:87] BufferTest.CopyFrom_CPU_To_CPU: 测试通过
+I20250610 21:07:34.853644 27217 test_buffer.cpp:91] 开始执行 BufferTest.GetDeviceTypeAndSet
+I20250610 21:07:34.853650 27217 test_buffer.cpp:96] BufferTest.GetDeviceTypeAndSet: 测试通过
+I20250610 21:07:34.853659 27217 test_buffer.cpp:100] 开始执行 BufferTest.IsExternal
+I20250610 21:07:34.853665 27217 test_buffer.cpp:110] BufferTest.IsExternal: 测试通过
+I20250610 21:07:34.853674 27217 test_buffer.cpp:114] 开始执行 BufferTest.CopyFrom_CPU_To_GPU
+I20250610 21:07:34.853703 27217 test_buffer.cpp:139] BufferTest.CopyFrom_CPU_To_GPU: 测试通过
+I20250610 21:07:34.853719 27217 test_buffer.cpp:143] 开始执行 BufferTest.CopyFrom_GPU_To_GPU
+I20250610 21:07:34.853753 27217 test_buffer.cpp:167] BufferTest.CopyFrom_GPU_To_GPU: 测试通过
+I20250610 21:07:34.853770 27217 test_buffer.cpp:171] 开始执行 BufferTest.CopyFrom_GPU_To_CPU
+I20250610 21:07:34.853796 27217 test_buffer.cpp:194] BufferTest.CopyFrom_GPU_To_CPU: 测试通过

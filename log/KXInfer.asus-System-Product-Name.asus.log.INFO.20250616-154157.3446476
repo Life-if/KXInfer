@@ -1,0 +1,5 @@
+Log file created at: 2025/06/16 15:41:57
+Running on machine: asus-System-Product-Name
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20250616 15:41:57.953935 3446476 test_main.cpp:13] Start Test...

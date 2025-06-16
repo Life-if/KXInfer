@@ -1,0 +1,77 @@
+Log file created at: 2025/06/06 22:32:34
+Running on machine: asus-System-Product-Name
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20250606 22:32:34.841241 627929 test_main.cpp:13] Start Test...
+I20250606 22:32:34.841502 627929 test_math.cpp:12] TEST Armadillo
+I20250606 22:32:34.841512 627929 test_math.cpp:16] Armadillo 载入成功
+I20250606 22:32:34.841527 627929 test_alloc.cpp:24] [CPU] Testing normal allocation and release
+I20250606 22:32:34.841535 627929 test_alloc.cpp:30] [CPU] Allocated 1024 bytes at: 0x5e59890c7540
+I20250606 22:32:34.841542 627929 test_alloc.cpp:51] [CPU] Memory content verification succeeded.
+I20250606 22:32:34.841548 627929 test_alloc.cpp:59] [CPU] Released memory at: 0x5e59890c7540
+I20250606 22:32:34.841558 627929 test_alloc.cpp:71] [CPU] Testing zero-size allocation
+I20250606 22:32:34.841563 627929 test_alloc.cpp:76] [CPU] Zero-size allocation returns: 0
+I20250606 22:32:34.841569 627929 test_alloc.cpp:80] [CPU] Zero-size allocation correctly returned null.
+I20250606 22:32:34.841578 627929 test_alloc.cpp:96] [CPU] Testing alignment for small and large allocations
+I20250606 22:32:34.841586 627929 test_alloc.cpp:106] [CPU] Small allocation (512) at: 0x5e59890c65c0
+I20250606 22:32:34.841593 627929 test_alloc.cpp:107] [CPU] Large allocation (2048) at: 0x5e59890c9e40
+I20250606 22:32:34.841598 627929 test_alloc.cpp:121] [CPU] Small allocation aligned to 16 bytes.
+I20250606 22:32:34.841602 627929 test_alloc.cpp:127] [CPU] Large allocation aligned to 32 bytes.
+I20250606 22:32:34.841611 627929 test_alloc.cpp:150] 开始测试 CPU 内存分配与释放
+I20250606 22:32:34.841617 627929 test_alloc.cpp:162] 内存分配成功，地址: 0x5e59890c7540
+I20250606 22:32:34.841622 627929 test_alloc.cpp:166] 内存释放成功
+I20250606 22:32:34.841631 627929 test_alloc.cpp:345] 开始测试 CPU 到 CPU 的内存复制
+I20250606 22:32:34.841643 627929 test_alloc.cpp:371] CPU 到 CPU 内存复制测试通过
+I20250606 22:32:34.841652 627929 test_alloc.cpp:386] 开始测试内存清零功能
+I20250606 22:32:34.841662 627929 test_alloc.cpp:408] 内存清零测试通过
+I20250606 22:32:34.841675 627929 test_alloc.cpp:184] [CUDA] Testing normal allocation and release with data verification
+I20250606 22:32:34.929430 627929 test_alloc.cpp:190] [CUDA] Allocated 1048576 bytes at: 0x7e4600c00000
+I20250606 22:32:34.932572 627929 test_alloc.cpp:223] [CUDA] Verified device memory contents successfully.
+I20250606 22:32:34.932608 627929 test_alloc.cpp:230] [CUDA] Released memory at: 0x7e4600c00000
+I20250606 22:32:34.932636 627929 test_alloc.cpp:241] [CUDA] Testing zero-size allocation
+I20250606 22:32:34.932651 627929 test_alloc.cpp:246] [CUDA] Zero-size allocation returns: 0
+I20250606 22:32:34.932659 627929 test_alloc.cpp:250] [CUDA] Zero-size allocation correctly returned null.
+I20250606 22:32:34.932674 627929 test_alloc.cpp:265] [CUDA] Testing memory reuse after release
+I20250606 22:32:34.932693 627929 test_alloc.cpp:272] [CUDA] First allocation at: 0x7e4600d00000
+I20250606 22:32:34.932706 627929 test_alloc.cpp:282] [CUDA] Second allocation at: 0x7e4600d00000
+I20250606 22:32:34.932714 627929 test_alloc.cpp:288] [CUDA] Memory was successfully reused.
+I20250606 22:32:34.932731 627929 test_alloc.cpp:304] [CUDA] Testing large allocation (no pool reuse)
+I20250606 22:32:34.932821 627929 test_alloc.cpp:311] [CUDA] First large allocation at: 0x7e4600e00000
+I20250606 22:32:34.932885 627929 test_alloc.cpp:321] [CUDA] Second large allocation at: 0x7e4601400000
+I20250606 22:32:34.932895 627929 test_alloc.cpp:327] [CUDA] Large allocation did not reuse previous memory block as expected.
+I20250606 22:32:34.932909 627929 test_alloc.cpp:426] 开始测试 CUDA 内存分配与释放
+I20250606 22:32:34.932976 627929 test_alloc.cpp:437] CUDA 内存分配成功，地址: 0x7e4601a00000
+I20250606 22:32:34.932988 627929 test_alloc.cpp:440] CUDA 内存释放成功
+I20250606 22:32:34.932999 627929 test_alloc.cpp:453] 开始测试 CUDA 到 CPU 内存拷贝
+I20250606 22:32:34.933025 627929 test_alloc.cpp:484] CUDA 到 CPU 内存拷贝测试通过
+I20250606 22:32:34.933033 627929 test_alloc.cpp:490] CUDA 到 CPU 内存拷贝资源释放完成
+I20250606 22:32:34.933043 627929 test_alloc.cpp:503] 开始测试 CPU 到 GPU 内存拷贝
+I20250606 22:32:34.933072 627929 test_alloc.cpp:541] CPU 到 GPU 内存拷贝测试通过
+I20250606 22:32:34.933104 627929 test_alloc.cpp:547] CPU 到 GPU 内存拷贝资源释放完成
+I20250606 22:32:34.933117 627929 test_alloc.cpp:560] 开始测试 GPU 到 GPU 内存拷贝
+I20250606 22:32:34.933152 627929 test_alloc.cpp:606] GPU 到 GPU 内存拷贝测试通过
+I20250606 22:32:34.933161 627929 test_alloc.cpp:613] GPU 到 GPU 内存拷贝资源释放完成
+I20250606 22:32:34.933184 627929 test_base.cpp:13] Testing base::error::Success
+I20250606 22:32:34.933202 627929 test_base.cpp:16] Status created: 操作成功
+I20250606 22:32:34.933229 627929 test_base.cpp:29] SuccessCheck test passed.
+I20250606 22:32:34.933249 627929 test_base.cpp:33] Testing base::error::InvalidArgument
+I20250606 22:32:34.933259 627929 test_base.cpp:36] Status created: 参数错误
+I20250606 22:32:34.933269 627929 test_base.cpp:44] InvalidArgumentError test passed.
+I20250606 22:32:34.933283 627929 test_base.cpp:48] Testing base::error::InternalError
+I20250606 22:32:34.933292 627929 test_base.cpp:51] Status created: 内部错误
+I20250606 22:32:34.933300 627929 test_base.cpp:57] InternalError test passed.
+I20250606 22:32:34.933315 627929 test_base.cpp:61] Testing base::error::PathNotValid
+I20250606 22:32:34.933322 627929 test_base.cpp:64] Status created: 路径无效
+I20250606 22:32:34.933331 627929 test_base.cpp:70] PathNotValid test passed.
+I20250606 22:32:34.933344 627929 test_base.cpp:74] Testing base::error::ModelParseError
+I20250606 22:32:34.933353 627929 test_base.cpp:77] Status created: 模型解析失败
+I20250606 22:32:34.933362 627929 test_base.cpp:83] ModelParseError test passed.
+I20250606 22:32:34.933377 627929 test_base.cpp:87] Testing base::error::FunctionNotImplement
+I20250606 22:32:34.933385 627929 test_base.cpp:90] Status created: 功能未实现
+I20250606 22:32:34.933393 627929 test_base.cpp:96] FunctionNotImplement test passed.
+I20250606 22:32:34.933408 627929 test_base.cpp:100] Testing base::error::KeyHasExits
+I20250606 22:32:34.933416 627929 test_base.cpp:103] Status created: 键已存在
+I20250606 22:32:34.933424 627929 test_base.cpp:109] KeyHasExits test passed.
+I20250606 22:32:34.933437 627929 test_base.cpp:113] Testing assignment operator
+I20250606 22:32:34.933445 627929 test_base.cpp:116] Assigned error code: 7
+I20250606 22:32:34.933454 627929 test_base.cpp:121] AssignmentOperator test passed.
