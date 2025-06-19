@@ -1,4 +1,6 @@
 # KXInfer
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Life-if/KXInfer)
+
 一个高效、灵活且可扩展的深度学习模型推理框架，支持主流大语言模型和视觉模型。(项目暂未完成，正在推进中……)
 
 ## 📌 项目简介
